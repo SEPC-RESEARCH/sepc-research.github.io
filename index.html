@@ -2,166 +2,532 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable Ecology and Policy Consultancy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #fafaf9;
-            color: #1f2937;
-        }
+<title>Sustainable Ecology and Policy Consultancy | SEPC</title>
 
-        header {
-            background: #14532d;
-            color: white;
-            padding: 60px 10%;
-        }
+<style>
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
 
-        header p {
-            font-size: 20px;
-            max-width: 700px;
-            line-height: 1.6;
-        }
+body{
+    background:#f8fafc;
+    color:#1f2937;
+}
 
-        nav {
-            background: white;
-            padding: 15px 10%;
-            border-bottom: 1px solid #ddd;
-        }
 
-        nav a {
-            margin-right: 25px;
-            text-decoration: none;
-            color: #14532d;
-            font-weight: bold;
-        }
+/* NAVBAR */
 
-        section {
-            padding: 50px 10%;
-        }
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:10;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
 
-        h2 {
-            color: #14532d;
-            font-size: 30px;
-        }
+.logo{
+    font-size:25px;
+    font-weight:800;
+    color:#064e3b;
+}
 
-        .cards {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.logo span{
+    color:#10b981;
+}
 
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            width: 250px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
 
-        footer {
-            background: #14532d;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#064e3b;
+    font-weight:600;
+}
 
-    </style>
+
+/* HERO */
+
+.hero{
+
+    min-height:90vh;
+    padding:100px 8%;
+    display:flex;
+    align-items:center;
+    color:white;
+
+    background:
+    linear-gradient(120deg,
+    rgba(6,78,59,.95),
+    rgba(2,132,199,.85)),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+.hero-content{
+    max-width:750px;
+}
+
+
+.hero h1{
+
+    font-size:65px;
+    line-height:1.1;
+    margin-bottom:25px;
+
+}
+
+
+.hero h1 span{
+    color:#6ee7b7;
+}
+
+
+.hero p{
+
+    font-size:21px;
+    line-height:1.7;
+    margin-bottom:35px;
+
+}
+
+
+.btn{
+
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:30px;
+    background:#10b981;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:15px;
+
+}
+
+
+.btn2{
+
+    background:white;
+    color:#064e3b;
+
+}
+
+
+
+/* IMPACT */
+
+.impact{
+
+padding:60px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+
+}
+
+
+.stat{
+
+background:white;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+.stat h2{
+
+font-size:40px;
+color:#10b981;
+
+}
+
+
+
+/* SECTION */
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+.title{
+
+text-align:center;
+font-size:38px;
+color:#064e3b;
+margin-bottom:30px;
+
+}
+
+
+
+.about{
+
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.8;
+
+}
+
+
+
+/* CARDS */
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+
+.card{
+
+padding:30px;
+border-radius:20px;
+color:white;
+min-height:220px;
+
+}
+
+
+.green{
+
+background:linear-gradient(135deg,#059669,#064e3b);
+
+}
+
+
+.blue{
+
+background:linear-gradient(135deg,#0284c7,#075985);
+
+}
+
+
+.orange{
+
+background:linear-gradient(135deg,#d97706,#92400e);
+
+}
+
+
+.purple{
+
+background:linear-gradient(135deg,#7c3aed,#4c1d95);
+
+}
+
+
+.card h3{
+
+font-size:25px;
+margin-bottom:15px;
+
+}
+
+
+.card p{
+
+line-height:1.6;
+
+}
+
+
+
+/* POLICY */
+
+.policy{
+
+background:#ecfdf5;
+text-align:center;
+
+}
+
+
+.policy h2{
+
+font-size:38px;
+color:#064e3b;
+
+}
+
+
+.policy p{
+
+font-size:20px;
+max-width:800px;
+margin:25px auto;
+line-height:1.7;
+
+}
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#064e3b;
+color:white;
+padding:35px;
+text-align:center;
+
+}
+
+
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:42px;
+}
+
+nav{
+flex-direction:column;
+}
+
+}
+
+</style>
 
 </head>
 
 
 <body>
 
+
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Research</a>
-    <a href="#">Projects</a>
-    <a href="#">Publications</a>
-    <a href="#">Contact</a>
+
+<div class="logo">
+SE<span>PC</span>
+</div>
+
+
+<div>
+
+<a href="#">Home</a>
+<a href="#">Research</a>
+<a href="#">Projects</a>
+<a href="#">Publications</a>
+<a href="#">Contact</a>
+
+</div>
+
 </nav>
 
 
-<header>
+
+<div class="hero">
+
+
+<div class="hero-content">
+
 
 <h1>
-Sustainable Ecology and Policy Consultancy
+Science. Nature.
+<span>Policy.</span>
+A Sustainable Future.
 </h1>
 
+
 <p>
-Research-driven solutions for ecological conservation, 
-climate resilience, geospatial analysis and sustainable policy development.
+
+Sustainable Ecology and Policy Consultancy (SEPC) transforms ecological research, geospatial intelligence and environmental data into practical solutions for climate resilience and sustainable development.
+
 </p>
 
-</header>
+
+<a class="btn" href="#">
+Explore Research
+</a>
+
+
+<a class="btn btn2" href="#">
+Collaborate With Us
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="impact">
+
+
+<div class="stat">
+<h2>10+</h2>
+<p>Research Projects</p>
+</div>
+
+
+<div class="stat">
+<h2>25+</h2>
+<p>Scientific Outputs</p>
+</div>
+
+
+<div class="stat">
+<h2>05</h2>
+<p>Research Domains</p>
+</div>
+
+
+<div class="stat">
+<h2>Global</h2>
+<p>Research Collaboration</p>
+</div>
+
+
+</div>
+
+
+
 
 
 <section>
 
-<h2>
+
+<h2 class="title">
 About SEPC
 </h2>
 
-<p>
-Sustainable Ecology and Policy Consultancy (SEPC) is an independent research and consultancy platform dedicated to advancing environmental sustainability through scientific research, GIS applications, ecological assessment and evidence-based policy solutions.
+
+<p class="about">
+
+Sustainable Ecology and Policy Consultancy is an independent research and consultancy platform dedicated to advancing ecological sustainability through scientific investigation, geospatial technologies and evidence-based environmental policy solutions.
+
 </p>
+
 
 </section>
 
 
 
+
+
+
 <section>
 
-<h2>
-Research Areas
+
+<h2 class="title">
+Research Domains
 </h2>
+
 
 
 <div class="cards">
 
-<div class="card">
-<h3>Ecology & Biodiversity</h3>
+
+<div class="card green">
+
+<h3>🌱 Ecology & Biodiversity</h3>
+
 <p>
-Research on ecosystems, species conservation and environmental change.
+Understanding ecosystems, conservation challenges and biodiversity change.
 </p>
+
 </div>
 
 
-<div class="card">
-<h3>Climate Change</h3>
+
+<div class="card blue">
+
+<h3>🛰 GIS & Remote Sensing</h3>
+
 <p>
-Climate vulnerability assessment and adaptation strategies.
+Satellite-based environmental monitoring and spatial intelligence.
 </p>
+
 </div>
 
 
-<div class="card">
-<h3>GIS & Remote Sensing</h3>
+
+
+<div class="card orange">
+
+<h3>🌡 Climate Research</h3>
+
 <p>
-Satellite-based environmental monitoring and spatial analysis.
+Climate risk assessment, adaptation and resilience planning.
 </p>
+
 </div>
 
 
-<div class="card">
-<h3>Environmental Policy</h3>
+
+
+<div class="card purple">
+
+<h3>📊 Environmental Policy</h3>
+
 <p>
-Scientific evidence for sustainable development planning.
+Scientific evidence supporting sustainable decision making.
 </p>
+
 </div>
 
 
+
 </div>
+
 
 </section>
+
+
+
+
+
+
+<section class="policy">
+
+
+<h2>
+From Research To Policy Impact
+</h2>
+
+
+<p>
+
+Scientific research → Environmental assessment → Data intelligence → Policy recommendation → Sustainable action
+
+</p>
+
+
+<a class="btn" href="#">
+Start Collaboration
+</a>
+
+
+</section>
+
 
 
 
@@ -170,6 +536,7 @@ Scientific evidence for sustainable development planning.
 © 2026 Sustainable Ecology and Policy Consultancy (SEPC)
 
 </footer>
+
 
 
 </body>
